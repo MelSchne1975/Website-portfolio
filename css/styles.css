@@ -47,8 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
 body { 
-    background-color: #D7B7AB;
+    background-color: #FFEFD0;
 }
 
 
@@ -58,26 +63,33 @@ h1,h2,h3,h4,h5,h6 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 48px;
+    font-size: 20px;
     line-height: normal;
   }
 
-  .poppins-regular, p {
+  .poppins-regular, p,nav {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 16px;
     font-style: normal;
   }
   
   a:hover {
-    color: #cc6540;
+    color: #AB1A79;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
 .button1 {
-    background-color: #006f6f;
+    background-color: #051539;
     color: white;
     text-transform: uppercase;
-    border: 2px solid #006f6f;
+    border: 2px solid #051539;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
   }
   
  .button2 {
@@ -92,20 +104,89 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
+/* Layout styling */
 
+.container {
+  padding: 0 15px;
+}
 
+.row {
+  margin: 25px 15px; /* 25px top and bottom, 0 left and right */
+}
 
+.center {
+  text-align: center;
+}
 
+.buttonmargin {
+  margin: 10px 0;
+}
 
+.logoframe {
+  max-width: 300px;
+  float: left;
+}
 
+.logo {
+  margin: auto 5px;
+  float: left;
+  max-width: 300px;
+  display: inline;
+  
+}
+header {
+  background-color: #F1DAAD;
+  text-align: center;
+  padding: 10px 0;
+}
 
+footer {
+  background-color: #F1DAAD;
+  text-align: center;
+  padding: 10px 0;
+}
 
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: black;
+  width: 100%;
+  font-size: 16px;
+}
 
+nav > ul > li {
+  display: inline-block;
+  margin: 15px;
+  
+}
 
+.link {
+  text-decoration: none;
+  color: black;
+}
 
+a.link:visited {
+  text-decoration: none;
+  color: #051539;
+}
 
+a.link:hover {
+  text-decoration: underline;
+  color: #ab1a79;
+}
 
+a.link:after {
+  text-decoration: none;
+  color: grey
+}
 
+#hero {
+  background-color: #F1DAAD;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 
 
 
