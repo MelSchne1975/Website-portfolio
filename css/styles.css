@@ -90,13 +90,17 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     font-size: 14px;
     border-radius: 10px;
+    margin: 10px 0;
   }
+
   
  .button2 {
     background-color: #c1924d;
     color: white;
     text-transform: uppercase;
     border: 2px solid #c1924d
+
+
   }
   .projectimage {
     width: 100%;
@@ -118,26 +122,23 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-.buttonmargin {
-  margin: 10px 0;
-}
 
 .logoframe {
-  max-width: 300px;
-  float: left;
+  max-width: 900px;
+  display: flex;
 }
 
 .logo {
-  margin: auto 5px;
-  float: left;
-  max-width: 300px;
-  display: inline;
-  
-}
-header {
+  margin-left: 25px;
+  margin-top: 25px;
+  max-width: 900px;
+ }
+ 
+ 
+ header {
   background-color: #F1DAAD;
   text-align: center;
-  padding: 10px 0;
+
 }
 
 footer {
@@ -183,14 +184,14 @@ a.link:after {
 
 #hero {
   background-color: #F1DAAD;
-  padding: 20px 0;
+  padding-top: 30px;
   display: inline-block;
   width: 100%;
 }
 
-
-
-
+#headershadow {
+  box-shadow: 10px 10px 8px #c1924d;
+}
 
 
 
