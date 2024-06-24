@@ -52,39 +52,164 @@ table {
   box-sizing: border-box;
 }
 
-body { 
-    background-color: #FFEFD0;
+/*
+Colors used:
+Background Color (Floral White): #fdf7ed;
+Primary Color (Prussian Blue): #143a52 or rgb(20,58,82);
+Secondary Color (Russet): #874c2d;
+Highlight Color-1 (Pale Cerulean): #a1bbce;
+Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
+*/
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+width: auto;
+float: right;
+margin-top: -65px;
+}
+body {
+  font-size: 18px;
+}
+.col-md-6 {
+  width: 50%;
+  margin-top: -20px;
+}
+.col-md-6-project {
+  width: 50%;
+  margin: 0 0 32px;
+}
+.col-md-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
 }
 
 
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-    line-height: normal;
-  }
 
-  h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
-    line-height: normal;
-  }
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-3 {
+    width: 25%;
+}
+.col-lg-4 {
+    width: 33.33%;
+}
+.col-lg-5 {
+    width: 41.66%;
+}
+.col-lg-7 {
+    width: 58.33%;
+    padding-bottom: 32px;
+}
+.col-lg-12 {
+    width: 100%;
+    margin-top: -18px;
+}
+.col-lg-12-skills {
+    width: 100%;
+    margin-top: -18px;
+    float: left;
+    padding: 0 20px 40px;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+
+
+body {
+  background-color: #fdf7ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #143a52;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+
+
+[class*="col-"] {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
   .poppins-regular, p,nav {
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
     font-style: normal;
   }
   .poppins-regular, ul {
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 14px;
    font-style: normal;
   }
@@ -106,9 +231,16 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 14px;
     border-radius: 10px;
     margin: 10px 0;
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
 
-  
+
+.button1:hover {
+  opacity: 0.8;
+}
+
+
  .button2 {
     background-color: #c1924d;
     color: white;
@@ -121,12 +253,19 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   .headshotimg {
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    ;
+      max-width: 450px;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
   }
+
+.buttonposition {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 .listtitle {
   text-align: left;
@@ -136,8 +275,13 @@ h1,h2,h3,h4,h5,h6 {
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 16px;
 }
+
 
 .row {
   margin: 25px 15px; /* 25px top and bottom, 0 left and right */
@@ -147,14 +291,30 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-
-.logoframe {
-  display: flex;
+.aboutmetext {
+  padding-top: 50px;
+  line-height: ;
 }
 
+
+.skillstext {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.skillslist {
+  padding-top: 30px;
+  padding-left: 75px;
+}
+
+.skillsheader{
+  padding-top: 30px;
+  padding-left: 40px;
+}
 .logo {
   margin-left: 25px;
   margin-top: 25px;
+  max-width: 150px;
  }
  
  image {
@@ -162,25 +322,35 @@ h1,h2,h3,h4,h5,h6 {
  }
 
  header {
-  background-color: #F1DAAD;
+  background-color: rgba(175, 131, 134, 0.8);
+  padding: 10px 0 4px;
+  position: relative;
+  box-shadow: 0px 6px 10px 0px rgba(20,58,82,0.5);
+ }
+
+footer {
+  background-color: #af8386;
   text-align: center;
+
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #143a52;
+  width: 100%;
+  font-size: 16px;
   position: relative;
 }
 
-footer {
-  background-color: #F1DAAD;
-  text-align: center;
-  padding: 10px 0;
-}
-
-nav > ul > li > a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: black;
-  width: 100%;
-  font-size: 16px;
-}
 
 nav > ul > li {
   display: inline-block;
@@ -209,15 +379,16 @@ a.link:after {
 }
 
 #hero {
-  background-color: #F1DAAD;
+  background-color: rgba(175, 131, 134, 0.5);
   padding-top: 30px;
   display: inline-block;
   width: 100%;
 }
 
-#headershadow {
-  box-shadow: 10px 10px 8px #c1924d;
+#hero span {
+  display: block;
 }
+
 
 
 .list {
@@ -237,6 +408,57 @@ a.link:after {
     font-style: normal;
   }
 
-  .headshotpicobj {
-    text-align: center;
+.animatedsvg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
   }
